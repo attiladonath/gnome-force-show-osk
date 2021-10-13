@@ -8,6 +8,7 @@
 	
 	"shell-version": [
 		"40",
-		"41.alpha"
+		"41.alpha",
+		"41"
 	]
 }
