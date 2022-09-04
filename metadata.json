@@ -3,7 +3,7 @@
 	"uuid": "force-show-osk@bruh.ltd",
 	"version": 1.0,
 	
-	"url": "https://gitlab.com/kirbykevinson/force-show-osk",
+	"url": "https://gitlab.com/warningnonpotablewater/force-show-osk",
 	"description": "Show the on-screen keyboard regardless of whether the touch mode is enabled",
 	
 	"shell-version": [
