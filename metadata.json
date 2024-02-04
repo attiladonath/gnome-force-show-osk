@@ -1,14 +1,11 @@
 {
-	"name": "(UNMAINTAINED) Force Show OSK",
-	"uuid": "force-show-osk@bruh.ltd",
+	"name": "Force Show OSK",
+	"uuid": "force-show-osk@attiladonath.com",
 	
-	"url": "https://gitlab.com/warningnonpotablewater/force-show-osk",
+	"url": "https://github.com/attiladonath/gnome-force-show-osk",
 	"description": "Show the on-screen keyboard regardless of whether the touch mode is enabled",
 	
 	"shell-version": [
-		"40",
-		"41",
-		"42",
-		"43"
+		"45"
 	]
 }

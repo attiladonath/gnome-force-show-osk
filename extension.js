@@ -1,18 +1,22 @@
-const {Clutter} = imports.gi;
+import Clutter from 'gi://Clutter';
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 
-let
-	seat = null,
-	originalGetTouchMode = null;
+let seat = null;
+let originalGetTouchMode = null;
 
-function init() {
-	seat = Clutter.get_default_backend().get_default_seat();
-	originalGetTouchMode = seat.get_touch_mode;
-}
+export default class ForceShowOskExtension extends Extension {
+	constructor(metadata) {
+		super(metadata);
 
-function enable() {
-	seat.get_touch_mode = () => true;
-}
+		seat = Clutter.get_default_backend().get_default_seat();
+		originalGetTouchMode = seat.get_touch_mode;
+	}
 
-function disable() {
-	seat.get_touch_mode = originalGetTouchMode;
+	enable() {
+		seat.get_touch_mode = () => true;
+	}
+
+	disable() {
+		seat.get_touch_mode = originalGetTouchMode;
+	}
 }
