@@ -6,6 +6,8 @@
 	"description": "Show the on-screen keyboard regardless of whether the touch mode is enabled",
 	
 	"shell-version": [
-		"45"
+		"45",
+		"46",
+		"47"
 	]
 }
